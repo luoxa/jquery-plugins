@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>demo</title>
+	<link rel="stylesheet" type="text/css" href="./assets/Font-Awesome-4.7/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/vlist.css">
+	<style type="text/css">
+
+	</style>
+</head>
+<body>
+	<div id="Vlist" style="height: 100%;"></div>
+	<script type="text/javascript" src="./assets/js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="./assets/js/jquery.nicescroll.min.js"></script>
+	<script type="text/javascript" src="./assets/js/vlist.js"></script>
+	<script type="text/javascript">
+		var option={
+			background:'#333',
+			color:'#009688',
+			listWidth:300,
+			control:{
+				show:true,
+				text:['上一步','下一步'],
+				textStyle:{
+					color:'#f00',
+					fontSize:18
+				}
+			},
+			startIndex:0,
+			data:[
+					{name:'step01',page:'./pages/page1.html',icon:'sitemap'},
+					{name:'step02',page:'./pages/page2.html',icon:'gears'},
+					{name:'step03',page:'./pages/page3.html'},
+					{name:'step04',page:'./pages/page1.html'},
+					{name:'step05',page:'./pages/page1.html'},
+					{name:'step06',page:'./pages/page1.html'},
+					{name:'step07',page:'./pages/page1.html'},
+					{name:'step07',page:'./pages/page1.html'}
+					]
+		};
+		$('#Vlist').vlist(option);
+
+</script>
+</body>
+</html>
+

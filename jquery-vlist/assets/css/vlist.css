@@ -1,0 +1,175 @@
+html,body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	overflow: hidden;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.val-list {
+	list-style: none;
+	padding: 10px 10px 10px 20px;
+	margin: 0px;
+	line-height: 40px;
+	-webkit-user-select:none;
+	-moz-user-select:none; 
+	-ms-user-select:none; 
+	user-select:none;
+}
+
+.val-list>li {
+	position: relative;
+	margin-bottom: 5px;
+}
+
+.val-arrow,.val-body {
+	position: relative;
+}
+
+.val-list .val-arrow {
+	left: 24px;
+    font-size: 40px;
+}
+
+.val-mark {
+    color: #fff;
+    position: absolute;
+    left: 15px;
+    font-size: 20px !important;
+}
+
+.val-list .val-body {
+	width: 40px;
+	height: 40px;
+	margin:0px 6px 0px 6px;
+	cursor: pointer;
+}
+
+
+.val-list .val-body>.fa-circle-thin{
+	font-size: 60px !important;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.val-list .val-body>.fa-circle{
+	font-size: 40px  !important;
+    position: absolute;
+    left: 8px;
+}
+
+.val-list .val-body>.fa {
+	font-size: 20px;
+	line-height: 40px;
+}
+
+.val-list .val-body>.val-content {
+	position: absolute;
+	left: 62px;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: left;
+}
+
+/*.val-list>li.val-active:after {
+	content: '';
+	display: block;
+	position: absolute;
+	border-right: 12px solid #fff;
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+	right: -10px;
+	bottom: 12px;
+	z-index: 9999;
+}*/
+
+.val-list-top:after {
+	content: '';
+	display: block;
+	position: absolute;
+	border-right: 12px solid #fff;
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+	right: 0px;
+	bottom: 18px;
+	z-index: 9999;
+}
+
+.val-list>li.val-active ~li {
+	/*color: #eee;*/
+}
+
+.val-list-container {
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+.val-list-container>.val-list {
+	height: 100%;
+	float: left;
+	width: 300px;
+}
+
+.val-list-container>.val-frame {
+	height: 100%;
+	margin-left: 300px;
+	background: #fff;
+	position: relative;
+	user-select:none;
+	z-index: 2;
+}
+
+.val-list-container>.val-frame>iframe {
+	border: 0;
+	height: 100%;
+	width: 100%;
+	border-style: none;
+}
+
+.val-control{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    padding: 40px 60px;
+    height: 24px;
+    z-index: 10;
+    color: #000;
+}
+.val-control>a{
+	cursor: pointer;
+    padding: 6px 24px;
+    background: #f3f6f6;
+    border: 1px solid #DADDDD;
+    box-shadow: 1px 2px 3px #DADDDD;
+    user-select:none;
+}
+.val-control>a>.fa{
+	margin: 0 3px;
+}
+
+.val-control>a:hover {
+    background: #e6e6e6;
+}
+.val-control>a:active {
+    box-shadow: inset -1px 2px 2px #aaa;
+    background: #fff;
+}
+
+.val-control-ban{
+	display: none;
+	cursor: auto;
+}
+
+.val-list-body{
+	overflow: hidden;
+    outline: none;
+    width: 200px;
+    float: left;
+    position: relative;
+}
+
